@@ -78,7 +78,8 @@ namespace AnimacionPortadaKanto
 
 		void MiSobre_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			if(MessageBox.Show("Este programa sirve para gestionar la animación de la portada, compatible solo con las roms región Kanto.\n\nCréditos\nDarthatron por la investigación (PokemonComunity) \nkaratekid552 por la rutina acortada (PokemonComunity) \nΩmega por el tutorial(Wahackforo)\n\nEl programa esta bajo licencia GNU ¿Quieres ver el código fuente?","Sobre la aplicación",MessageBoxButton.YesNo,MessageBoxImage.Information)==MessageBoxResult.Yes)
+				System.Diagnostics.Process.Start("https://github.com/TetradogPokemonGBA/AnimacionPortada");
 		}
 		void BtnAñadir_Click(object sender, RoutedEventArgs e)
 		{
